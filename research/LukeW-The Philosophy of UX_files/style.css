@@ -1,0 +1,794 @@
+@charset "utf-8";
+/*
+FONTS & RESET
+============
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 3.0.0b1
+build: 1160
+*/
+html{color:#333333;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+body{font:13px/1.24 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small; text-align: center;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+/* Page Styles ================================================ */ 
+
+a:link,
+a:active,
+a:visited {
+	color:#6fa601;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+.right {
+	float: right;
+}
+strong {
+	font-weight: 800;
+}
+.explain {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color: #8d8c8c;
+	line-height: 1.2;
+	font-size:90%;
+}
+
+.example { 
+	float: left; 
+	margin: 0px 15px 10px 0px; 
+}
+
+.pg-wrap {
+	margin:0 auto;
+	text-align: left;
+	height:100%;
+	max-width: 970px;
+	width:expression(970 + "px");
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.32;
+	background:url(http://www.lukew.com/images/page_fold.gif) repeat-y 204px 0;
+}
+.entry {
+	max-width: 615px;
+	width:expression(615 + "px");
+}
+
+.pg-bd {
+	margin-left: 240px;
+}
+
+.pg-ft {
+	background:url(http://www.lukew.com/images/dots_grad.gif) repeat-x top;
+	height:60px;
+	margin-top:100px;
+	margin-left: 240px;
+	padding:15px 0px 0 10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#687c51;
+	font-size:75%;
+	clear: both;
+}
+
+/* Top Nav Styles ================================================ */ 
+
+.nav {
+	height:100%;
+}
+
+.nav ul {
+	background:url(http://www.lukew.com/images/dots_grad.gif) repeat-x bottom;
+	float:left;
+	margin-top:35px;
+	padding-bottom: 29px;
+	width:100%;
+}
+
+.nav li {
+	float:left;
+	padding-right:10px;
+}
+
+.nav li a {
+	color:#000;
+	height:40px;
+	display:block;
+	padding:5px 10px 0 5px;
+	float:left;
+}
+
+.nav li a:hover {}
+
+.nav li a.on {}
+
+.nav li a span {
+	display:block;
+	background-image:url(http://www.lukew.com/images/sprite.gif);
+	background-repeat:no-repeat;
+	height:11px;
+	overflow:hidden;
+	text-indent:-3000px;
+	margin:15px 10px 0 5px;
+}
+
+	#about {
+		border-left:11px solid #9fb84c;
+	}
+	
+	a#about.on,
+	a#about:hover {
+		border-left:11px solid #a02d24;
+	}
+	
+	#about span {
+		background-position:0 0;
+		width:55px;
+	}
+
+	#writings {
+		border-left:11px solid #bfce86;
+	}
+	
+	a#writings.on,
+	a#writings:hover {
+		border-left:11px solid #ee9d05;
+	}
+	
+	#writings span {
+		background-position:-118px 0;
+		width:75px;
+	}
+	
+	#presentations {
+		border-left:11px solid #cddfa9;
+	}
+	
+	a#presentations.on,
+	a#presentations:hover {
+		border-left:11px solid #3ba1c9;
+	}
+	
+	#presentations span {
+		background-position:-260px 0;
+		width:121px;
+	}
+
+
+/* Main Content Styles ================================================ */ 
+
+.main .sub {
+	padding-bottom:5px;
+	margin-top: 10px;
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+}
+.main .sub span {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	display:block;
+}
+.main p, .main ul, .main ol {
+	margin-bottom: .9em;
+	font-size:110%;
+	line-height: 1.4;
+}
+.main .feature {
+	padding-bottom: 25px;
+	font-size:120%;
+	line-height: 1.3;
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+}
+.main blockquote  {
+	margin: 12px 0px 12px 40px; 
+	font-family:Georgia, "Times New Roman", Times, serif;
+	line-height: 1.4;
+	font-size:105%;
+	color:#3c3c3c;
+}
+
+.main cite {
+	color:#999999;
+	font-size:83%;
+	display:block;
+	margin-bottom: 25px;
+	margin-top: 5px;
+}
+.main cite a {
+	color:#999999;
+}
+.entry blockquote cite {
+	font-size: 105%;
+	color: #333333;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.entry blockquote cite a {
+	color:#6fa601;
+}
+.callout {
+	float: left;
+	margin-right: 15px;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	border-right:3px solid #86c024;
+	width: 40%;
+}
+.entry hr {
+	margin: 15px 0px;
+}
+.entry .feature {
+	padding-bottom: 15px;
+	font-size:140%;
+	line-height: 1.2;
+	background: none;
+	border-bottom: 1px solid #c9c9c9;
+}
+.entry .datatable td, .entry .datatable th  {
+	padding: 3px 7px;
+	vertical-align: top;
+	border-bottom: 1px solid #c9c9c9;
+}
+.entry .datatable th  {
+	background-color: #cddfa9;
+	padding: 7px 7px;
+	border-right: 1px solid #ffffff;
+}
+.main .bookreview {
+	padding-bottom: 20px;
+	margin: 0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+}
+.main .bookreview strong {
+	font-weight: 800;
+}
+.main .bookreview a {
+	display: block;
+}
+.main .bookreview img {
+	float: left;
+	border: 1px solid #bebcbc;
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#bfbbbb, OffX=0, OffY=3);
+	-webkit-box-shadow: 0px 3px 5px #bfbbbb;
+	-moz-box-shadow: 0px 3px 5px #bfbbbb;
+	padding: 0px;
+	margin-right: 15px;
+}
+
+.main li {
+	margin-left: 3em;
+	list-style-type: disc;
+	margin-bottom: 1px;
+}
+.main ol li {
+	list-style-type: decimal;
+}
+.main h1, h2, h3, h4, h5 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.main h1 {
+	font-size:250%;
+	letter-spacing:0.025em;
+	color: #333333;
+	line-height: 1em;
+}
+.main .writings {
+	padding-bottom: 10px;
+	color: #ff9100;
+}
+.main h2 {
+	padding:5px 0 2px 0;
+	font-size:120%;
+	line-height: 1.3em;
+	font-weight: 600;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.main .listing h2 {
+	border-left: 6px solid #97c042;
+	padding:.2em 0em .2em .4em;
+	margin-bottom:.8em;
+	font-size:130%;
+	line-height: 1.4em;
+	font-weight: normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.main h3 {
+	border-bottom:4px solid #fba913;
+	padding:0 4em .2em 0;
+	margin-bottom:.8em;
+	font-size:150%;
+	display: inline;
+	line-height: 3em;
+}
+.main h4 {
+	padding:0 4em .2em 0;
+	margin-bottom: 3px;
+	font-size:130%;
+	line-height: 1.1em;
+}
+.main .listing ul {
+	margin-bottom: 20px;
+}
+.main .listing li {
+	padding:0 0 0 10px;
+	margin: 0 5px 0 0px;
+	background:url(http://www.lukew.com/images/bullet_icon.gif) no-repeat 0 7px;
+	font-size:90%;
+	list-style-type: none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #666666;
+}
+.main .listing li a {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:105%;
+}
+.main .postend {
+	height: 1.5em;
+	margin-top: 3em;
+	margin-bottom: 0;
+	font-size:100%;
+	padding: .75em;
+	list-style-type: none;
+	border-left:6px solid #fba913;
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+}
+
+.main .postend a {
+	color:#ee9d05;
+}
+
+.main .postend li {
+	display:inline;
+	padding:0;
+	margin: 0 5px 0 0;
+	float: left;
+}
+.main .postend .share_tw {
+	background:url(http://www.lukew.com/images/icon_twitter_16.gif) no-repeat 0px 0px;
+    padding: 0 10px 0 18px;
+}
+.main .postend .share_fb {
+	background:url(http://www.lukew.com/images/icon_fb_16.gif) no-repeat 0px 0px;
+    padding: 0 10px 0 20px;
+}
+.main .postend .share_dg {
+	background:url(http://www.lukew.com/images/icon_digg_16.gif) no-repeat 0px 0px;
+    padding: 0 10px 0 22px;
+}
+.main .endnav {
+	border-left:6px solid #86c024;
+	margin-top: 0;
+	font-size:100%;
+	padding: .75em;
+}
+.main .endnav a {
+	padding: 0 10px 0 5px;
+	border-right: 1px solid #c9c9c9;
+}
+.main .endnav .final {
+	border-right: 0px;
+	}
+
+
+/* Main Sidebar Styles ================================================ */ 
+
+
+.main .sidebar {
+	top:0px;
+	float:right;
+	position: relative;
+	padding-left: 15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:90%;
+}
+.main .sidebar img {
+	border: 1px solid #bebcbc;
+}
+.main .sidebar .links {
+	border-left: 6px solid #fba913;
+	background: none;
+	padding: 0px 0px 50px 11px;
+	margin: 0px;
+}
+.main .sidebar .links img, .bookimg {
+	float: left;
+	margin-right: 7px;
+	border: 1px solid #bebcbc;
+	margin-bottom: 15px;
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#bfbbbb, OffX=0, OffY=3);
+	-webkit-box-shadow: 0px 3px 5px #bfbbbb;
+	-moz-box-shadow: 0px 3px 5px #bfbbbb;
+}
+.main .sidebar .promo a, .sidebar .links .promo a {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:120%;
+	line-height: 1.2em;
+	color: #ff9100;
+	display: block;
+}
+.main .sidebar .promo .explain, .sidebar .promo .explain {
+	font-size:85%;
+}
+.main .sidebar q {
+	clear: left;
+	display: block;
+}
+.main .sidebar cite {
+	font-size: 100%;
+}
+.main .sidebar cite a {
+	color:#6fa601;
+}
+.main .sidebar .linklist li {
+	padding:0px;
+	margin:0px 0px 3px 15px;
+	color:#ff9100;
+	background: none;
+	list-style-type: disc;
+}
+
+	
+
+/* Sidebar ================================================ */
+
+.sidebar {
+	top:0px;
+	float:left;
+	position: absolute;
+	*position: realtive; /* IE 7 and below */
+	width:200px;
+	margin:5px 0px 20px 10px;
+	_margin-left: 5px; /* IE 6 and below */
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:93%;
+}
+.logo {
+	margin: 35px 0 35px 0;
+}
+.writings a {
+	color:#ee9d05;
+}
+.sidebar .graphics {
+	display:block;
+	overflow:hidden;
+	text-indent:-3000px;
+	width:200px;
+	margin-left :0px;
+	float:left;
+	position:relative;
+	z-index:3;
+	margin-bottom: 15px;
+}
+.sidebar .webforms {
+	background:url(http://www.lukew.com/images/gfx-webforms.gif) no-repeat 0 0px;
+	height:328px;
+}
+.sidebar .mobilefirst {
+	background:url(http://www.lukew.com/images/gfx-mobilefirst.gif) no-repeat 0 0px;
+	height:328px;
+}
+.sidebar .siteseeing {
+	background:url(http://www.lukew.com/images/gfx-siteseeing.gif) no-repeat 0 0px;
+	height:262px;
+}
+.sidebar .writings {
+	background:url(http://www.lukew.com/images/gfx-writings.gif) no-repeat 0 0px;
+	height:299px;
+}
+.sidebar .about {
+	background:url(http://www.lukew.com/images/gfx-about.gif) no-repeat 0 0px;
+	height:274px;
+}
+.sidebar .gfxpresentations {
+	background:url(http://www.lukew.com/images/gfx-presentations.gif) no-repeat 0 0px;
+	height:277px;
+}
+.sidebar .links {
+	border-left: 6px solid #fba913;
+	background:url(http://www.lukew.com/images/dots.png) repeat-x top;
+	padding: 18px 0px 35px 15px;
+	margin: 0px;
+}
+.sidebar .presolinks {
+	border-left: 6px solid #0487c4;
+	background:url(http://www.lukew.com/images/dots.png) repeat-x top;
+	padding: 18px 10px 5px 15px;
+	margin: 0px;
+	color: #8a8c88;
+}
+.sidebar .links ul, .sidebar .links p {
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+.sidebar .links p {
+	padding-bottom: 15px;
+}
+.sidebar .links h5, .sidebar .presolinks h5 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: 10px;
+	font-size: 110%;
+	font-weight: bold;
+	color: #333333;
+}
+.sidebar .break {
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+	height: 1px;
+	margin-bottom: 15px;
+}
+
+.sidebar .links li, .sidebar .presolinks li {
+	margin-bottom: 10px;
+}
+.sidebar .linklist li {
+	margin-bottom: 5px;
+}
+.sidebar .links li a, .sidebar .links p a {
+	color:#ee9d05;
+	line-height: 1.3;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.sidebar .presolinks li a {
+	color:#0487c4;
+	line-height: 1.3;
+	display: block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.sidebar .links li a {
+	display:block;
+}
+.sidebar .explain {
+	padding: 7px 0px;
+}
+.sidebar q {
+	color:#666;
+	display:block;
+	width: 90%;
+	font-size: 100%;
+	margin-bottom: 25px;
+}
+.sidebar cite {
+	color:#999999;
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	padding-top:.3em;
+	font-size:95%;
+}
+.sidebar .menu a {
+	padding-left: 22px;
+	height: 16px;
+	line-height: 1.3;
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.sidebar .menu li {
+	margin-bottom: 10px;
+}
+.sidebar .menu #rss {
+	background:url(http://www.lukew.com/images/icon_rss.gif) no-repeat 0 0px;
+}
+.sidebar .menu #twitter {
+	background:url(http://www.lukew.com/images/icon_twitter.gif) no-repeat 0 0px;
+}
+
+
+/* Main Presentations Styles ================================================ */ 
+
+.presentations a {
+	color:#0487c4;
+}
+.main .presentations {
+	padding-bottom: 7px;
+	color: #0487c4;
+}
+.main .presentationendnav {
+	border-left:6px solid #0487c4;
+	margin-top: 35px;
+	font-size:100%;
+	padding: .6em;
+	clear: both;
+}
+.main .presentationendnav a {
+	line-height: 1.4em;
+	color: #0487c4;
+	display: block;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.main .listing .presentations {
+	width: 165px;
+}
+.main .sidebar .presentations {
+	border-left: 6px solid #3ba1c9;
+	background: none;
+	padding: 0px 0px 50px 11px;
+	margin: 0px;
+}
+.main .sidebar .presentations h5 {
+	color: #333333;
+	font-size: 135%;
+	margin-bottom: 15px;
+}
+.main .sidebar .presentations li {
+	padding:0px;
+	margin:0px 0px 15px 0px;
+	background: none;
+}
+.main .sidebar .presentations li a {
+	display: block;
+	color: #3ba1c9;
+}
+.presummary {
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	margin-right: 175px;
+}
+.presummarycontent {
+	width: 100%;
+	vertical-align: top;
+}
+.main .presummary .presummarycontent h2 {
+	border: none;
+	padding: 0px;
+	margin-bottom:.2em;
+	font-size:150%;
+	line-height: 1.1em;
+}
+.presummarycontent td {
+	padding: 1px 8px 1px 0px;
+	font-size:95%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #8a8c88;
+}
+.presummarycontent td a {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.presummarylinks {
+	padding-right: 15px;
+	vertical-align: top;
+}
+.precontentlinks {
+	float: left;
+	margin-right: 15px;
+}
+.preimageblog, .presummarylinks img, .precontentlinks img {
+	border: 1px solid #bebcbc;
+	filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#bfbbbb, OffX=0, OffY=3);
+	-webkit-box-shadow: 0px 3px 3px #bfbbbb;
+	-moz-box-shadow: 0px 3px 3px #bfbbbb;
+	padding: 0px;
+	margin-bottom: 3px;
+}
+.main .listing .presummarylinks ul {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.main .listing .presummarylinks li {
+	background:url(http://www.lukew.com/images/dots.png) repeat-x top;
+	padding: 4px 0px;
+	margin: 0px;
+	font-size: 90%;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.main .listing .presummarylinks .first {
+	background: none;
+}
+.main .listing .presummarylinks li a {
+	font-size: 90%;
+}
+.main .presoend {
+	border-left:6px solid #0487c4;
+}
+.main .presoend a {
+	color:#0487c4;
+}
+.main .presodl {
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+	margin-left: 165px;
+}
+.main .presoau {
+	margin-left: 165px;
+}
+.main .presodl li, .main .presoau li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0 0px 10px 0px;
+	font-size: 90%;
+	color: #8d8c8c;
+}
+.main .presodl a {
+	background:url(http://www.lukew.com/images/btn_pdf.gif) no-repeat 3px 2px;
+	padding: 0 0px 5px 45px;
+}
+.main .presoau a {
+	background:url(http://www.lukew.com/images/btn_mp3.gif) no-repeat 3px 2px;
+	padding: 0 0px 5px 45px;
+}
+.main .presocontent {
+	clear: left;
+}
+.main .presocontent h3 {
+	border-bottom:4px solid #0487c4;
+	line-height: 2.5em;
+}
+.main .presocontent ul {
+	margin-bottom: 20px;
+}
+.main .presocontent li {
+	padding:0 0 0 10px;
+	margin: 0 5px 0 0px;
+	background:url(http://www.lukew.com/images/bullet_icon.gif) no-repeat 0 7px;
+	font-size:90%;
+	list-style-type: none;
+}
+.main .upcoming h2 {
+	border-left: 6px solid #97c042;
+	padding:.2em 0em .2em .4em;
+	margin-bottom:.3em;
+	font-size:150%;
+	line-height: 1.1em;
+	font-weight: normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.eventsupcoming {
+  border-spacing: 4px;
+  border-collapse: separate;
+  margin-bottom: 25px;
+}
+
+.eventdate {
+	white-space:nowrap;
+	background-color: #f0f5e5;
+	padding: 3px 10px 3px 5px;
+	border-right: 1px solid #97c042;
+	border-bottom: 1px solid #ebf2dd;
+	vertical-align: top;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.eventdetails {
+	padding: 3px 0px 3px 10px;
+	font-size: 100%;
+	border-bottom: 1px solid #ebf2dd;
+	vertical-align: top;
+}
+.eventdetails strong {
+	font-weight: normal;
+}
+
+
+/* Main About Styles ================================================ */ 
+
+.about a {
+	color: #a80510;
+}
+.main .about {
+	padding-bottom: 8px;
+	color: #a80510;
+}
+.main .aboutendnav {
+	border-left:6px solid #a02d24;
+	margin-top: 35px;
+	font-size:100%;
+	padding: .6em;
+}
+.main .aboutendnav a {
+	line-height: 1.4em;
+	color: #a80510;
+	display: block;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.main .listing .about {
+	width: 178px;
+}
+.main .sidebar .aboutlinks {
+	border-left: 10px solid #97c042;
+	padding: 10px 0px 10px 0px;
+	margin: 0px 23px 0px 0px;
+}
+.main .sidebar .aboutlinks li {
+	padding: 5px 10px;
+	margin:0px;
+	background:url(http://www.lukew.com/images/dots.png) repeat-x bottom;
+}
+.main .sidebar .aboutlinks a {
+	color: #6fa601;
+}
