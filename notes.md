@@ -7,8 +7,8 @@ first few slides are in the wrong order:
 
 its 20m before I get to pt 2  
 
-URI stands for ?
-what are a few other protocols
+URI stands for Uniform Resource Indicator
+what are a few other protocols? HTTP, FTP, SMTP
 
 internet arch needs a diagram
 
