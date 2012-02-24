@@ -6,18 +6,20 @@
 !SLIDE
 # Hi!
 
-- I'm @jonathanpberger
-- I use read and write code every day to make stuff at @pivotallabs
+!SLIDE
+# What it says on the tin
+> In this talk, we'll investigate how treating Coding as Literacy can affect the way **decisions** are made, describe varying **levels of literacy** among teammates, and discuss **how to get literate** in technical topics.
+
+!SLIDE
+# I'm @jonathanpberger
 - My background is in philosophy and then design and now development
-- I've been actively learning for ~5 years
-- that means I'm either really good at it or really bad
+- I read and write code every day to make stuff at @pivotallabs
 
 !SLIDE
 ## Who are you?
 Show of hands:
 
 - Who's a full-time coder?
-- Who's somewhat literate?
 - How many ppl have "get technical" as their NYE res?
 - How's it going? Still with it?
 
@@ -25,27 +27,18 @@ Show of hands:
 # The Plan
 - 40m to Speed through a *ton* of material.
 - Try to do a rough survey of the lay of the land. No time to be exhaustive.
-- Plenty of material to check out later. httep://jonathanpberger.com/talks/agileux
+- Plenty of material to check out later. http://jonathanpberger.com/talks/agileux
 
 !SLIDE
 
-- Act 1 - Coding as Literacy / Intro
+- Act 1 - Coding as Literacy
 - Act 2 - How literate does each role need to be do do agile well?
 - Act 3 - Becoming Literate
 
-!SLIDE
+<!-- !SLIDE
 - we'll investigate how treating Coding as Literacy can affect the way decisions are made and work gets done, 
 - describe what varying levels of literacy among teammates facilitate doing agile well, 
-- discuss how to get literate in technical topics.
-
-
-!SLIDE
-# What it says on the tin
-> Real world agile teams, traditionally defined rigid roles are rapidly being displaced by a culture of collective ownership of the product. Responsibilities are being decoupled from specialties by a collection of operators with overlapping skills, and chief among them is technical acumen.
-
-!SLIDE
-## What it says on the tin, cont'd
-> Every day, it makes less and less sense to talk about skill sets as collections of binary "I can do this"'s or "I don't do that"'s. In this talk, we'll investigate how treating Coding as Literacy can affect the way decisions are made and work gets done, describe what varying levels of literacy among teammates, facilitate doing agile well, and discuss how to get literate in technical topics.
+- discuss how to get literate in technical topics. -->
 
 !SLIDE
 ## Act 1: Coding As Literacy
@@ -60,27 +53,20 @@ Show of hands:
 > "I don't want to *be* anything, I want to *do* everything"
 
 !SLIDE
-### At the Balanced Team conference[], Lane[] talked about Hybrid User Interviews
-- product decisions are design decisions. Everyone makes them.
-
-> "Design is a core competency, not a role."
+### Lane Halley says
+> Product decisions are design decisions—Everyone makes them. **Design is a core competency, not a role.**
 
 !SLIDE
 # Chris Dixon goes more in-depth:
-> **Should non-technical people at tech startups learn to code?** This is where I disagree with some of the conventional wisdom. Certainly it is worthwhile learning programming, at least for reasons 3 & 4 above. You should realize, however, that 
+> **Should non-technical people at tech startups learn to code?** This is where I disagree with some of the conventional wisdom. Certainly it is worthwhile learning programming...You should realize, however, that 
 
 !SLIDE
-> to become a good programmer takes thousands of hours of practice. 
+> ...to become a good programmer takes thousands of hours of practice... 
 
 - @cdixon
 
 !SLIDE
-> I'd also argue that if you are a non-technical person working at a web company the the first thing you should learn is internet architecture (DNS, http, html, web servers, database, TCP/UDP, IP, etc). 
-
-- @cdixon
-
-!SLIDE
-> Learning some programming is good too, to help relate to technical colleagues. But if your goal is to build a large-scale web service, your time as a non-technical person is better spent recruiting people who have been coding for years.
+> ...if you are a non-technical person working at a web company the the first thing you should learn is internet architecture (DNS, http, html, web servers, database, TCP/UDP, IP, etc). 
 
 - @cdixon
 
@@ -88,7 +74,10 @@ Show of hands:
 ## I gave a "Git for Designers" talk
 - the guy before me talked typography to a rapt audience
 - ...and when Ryan said 'git', the room emptied(!)
-- he also said "We don't hire designers who can't code",
+- he also said
+
+!SLIDE
+# "We don't hire designers who can't code",
 - and in a few years, no one will
 
 !SLIDE
