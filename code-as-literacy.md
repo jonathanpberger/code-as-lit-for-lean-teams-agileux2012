@@ -7,8 +7,11 @@
 # Hi!
 
 !SLIDE
-# What it says on the tin
-> In this talk, we'll investigate how treating Coding as Literacy can affect the way **decisions** are made, describe varying **levels of literacy** among teammates, and discuss **how to get literate** in technical topics.
+# Goals
+- Argue that "Literacy" is a useful way to talk about becoming technical
+- Urge people to become technically literate 
+- Share how I did it
+
 
 !SLIDE
 ## I'm @jonathanpberger
@@ -37,49 +40,75 @@ Show of hands:
 !SLIDE
 # The Plan
 - 25m to Speed through a *ton* of material.
-- Try to do a **rough survey** of the lay of the land.
+- Try to tell my story: how I got technical, and why you might want to.
 - Plenty of material to check out later. <http://jonathanpberger.com/talks/agileux>
-
-!SLIDE
-#The Plan
-- Act 1 - Coding as Literacy
-- Act 2 - How Literate should each role be in a Lean Team?
-- Act 3 - Becoming Technically Literate
-
-<!-- !SLIDE
-- we'll investigate how treating Coding as Literacy can affect the way decisions are made and work gets done, 
-- describe what varying levels of literacy among teammates facilitate doing agile well, 
-- discuss how to get literate in technical topics. -->
 
 !SLIDE
 ## Act 1: Coding As Literacy
 
 !SLIDE
-## Why "Code as Literacy"?
-- It's a good way to talk about coding, which is often treated as a binary.
-- The success of Code Year has made me think I don't need to present this as an argument, so I'm gonna plunge ahead.
+Learning hard technical skills is 
+# scary
+
+!SLIDE
+Remember
+# Literacy != Fluency
+
+!SLIDE
+# Conquer your fear!
+It's fun, I promise!
+
+!SLIDE
+# A True Story
 
 !SLIDE
 ## I gave a "Git for Designers" talk
 - The speaker before me talked typography to a rapt audience
-- ...and when Ryan said 'git', the room emptied(!)
+- ...and when Ryan said 'Git...', the room emptied(!)
 - He also said:
 
 !SLIDE
 # "We don't hire designers who can't code."
 
 !SLIDE
-## Act 2: How literate should each role be to do Agile well?
+## Why "Code as Literacy"?
+- It's a good way to talk about coding, which is often treated as a binary.
+- The success of Code Year indicates this case may be stipulated. Onward!
+
+!SLIDE
+## Act 2: How does Code Literacy Affect Agile Teams?
 
 !SLIDE
 ### My Thesis 
-# High levels of code literacy correlate with more successful project outcomes.
+# High levels of code literacy correlate with more sustainable projects and more successful outcomes.
 
 !SLIDE
 # Where can literacy help? 
 - Designer, Product Owner: better tactical design choices (remember: every choice is a design choice)
 - Principal: better strategic design choices, more realistic estimates, better analytical tools.
 - Developer: uhhh...
+
+!SLIDE
+# Making is good for projects
+- small details are important, especially to the user. They fall by the wayside.
+- there's a whole class of things for which it takes more time to explain it than to do it. This is tech literacy's sweet spot for PO's and designers.
+- this leads to a *dramatic* increase in speed
+
+!SLIDE
+# Making is good for teams
+- lend a helping hand around the edges
+- avoid resource bottlenecks.
+- tech literacy builds respect and camraderie
+
+!SLIDE
+# Designers can be fraidy-cats
+- Lane: "UX designers are more scared of devs than of biz people"
+- Josh / Jeff: Developers deliver code, designers deliver sketches 
+
+!SLIDE
+# Making is good for individuals
+- it feels **awesome** to build things
+- instead of telling someone else how to paint, you get to hold the brush
 
 !SLIDE
 # Where can literacy hurt?
@@ -102,167 +131,121 @@ Preserve the ability / reserve the right to stay innocent and come up with crazy
 ## Act 3: How to get literate?
 - Be realistic about your goals
   - A lot of promises are made to sell this stuff. Chill out.
-- 8 Ways Code Literacy Makes for Better UX
+- How I got Literate
 - The links slide (later).
 
 !SLIDE
-# 8 Ways Code Literacy Makes for Better UX
-I'm going to tear through a handful of technical concepts in modern web design; treat this as a list of 'good to know's.
+# My Path
+- re-trace my history and what I learned, in order
+- what were the first things that were useful? how did I learn them?
 
 !SLIDE
-### 8 Ways Code Literacy Makes for Better UX
-
-(This is a list)
-
-1. Cucumber: personae live
-2. Version control (I like Git)
-3. (Live) Style Guide Driven Design
-4. JavaScript: what can you do with interaction design
-5. Internet Architecture: (DNS, http, html, web servers, database, TCP/UDP, IP, etc)
-6. Database Nouns
-7. HTTP Verbs: what are the atoms of the web
-8. REST: Using those verbs (check that this is a formal def'n of REST)
+I started as 
+# a self-taught designer
 
 !SLIDE
-
-each do
-  What does it look like?
-  what is it?
-  why does it help lean teams?
-  how do I learn it?
-end
-
-Bonus: 
+I worked on SU and
+# found Agile and fell in love. 
 
 !SLIDE
-#1. Cucumber: personae live
-If you're fortunate enough to be doing TDD, learn Cucumber. It's a great way to think through problems and communicate w/ developers. Given / When / Then. Also, use your personas in Cucumber stories.
-
-What is it? BDD framework.
-Why does it help lean teams? helps you create better stories
-How do I learn it? Phrase everything as Given-when-then.
-Difficulty: 1 of 5
+# I wanted to bring Agile to design.
 
 !SLIDE
-  Feature: Add Item to Shopping cart
-
-    As a Customer
-    I want to add an item to my cart
-    So that I can purchase it when I'm done shopping
-
-    Given I'm a logged in Customer on an Item Page
-    When I add the item to my cart
-    Then my Cart Items should increment
-    And my Sub-Total Price should increase by the cost of the item
+I found Pivotal, and 
+# they needed an Agile designer
 
 !SLIDE
-#2. Version Control w/ Git
-
-What is it? Disaster recover and collaboration-enabling software.
-Why does it help lean teams? Its the cost of entry into development.
-How do I learn it? See my FOWD talk. http:jonathanpberger.com/code_management
-Difficulty: 2 of 5
+#Sweet! 
+I started working with 2 pairs of developers.
 
 !SLIDE
-#3. Enough HTML and CSS for (Live) Style Guide Driven Design
-Become literate enough in HTML and CSS to practice Style Guide Driven Design. This works well for larger systems, and entails keeping all design elements in a style guide. When developing features, mocks are made using very rough wireframes that reference the Style Guide (e.g., "Sign-in form" or "secondary-action button"). Any new features must either use existing design elements, or treat the development of the new element as a feature.
+They would type code
+# I would use Adobe for mocks
 
-What is it? Test-drive designs.
-Why does it help lean teams? It removes duplication and inconsistency from design.
-How do I learn it? Check out the Meetup video and the article. Oh yeah, learn HTML and CSS!
-Difficulty: 2 of 5
 
 !SLIDE
-#4. JavaScript and JQuery
-Learn enough JS to understand what can you do cheaply with interaction design. 
-The JQueryUI library is very popular, and a good place to start.
-Beware the Bad Parts of JS.
-
-What is it? Client-side interaction (and more).
-Why does it help lean teams? Be more efficient in your use of interaction
-How do I learn it? Code academy's a great start.
-Difficulty: 4 of 5
+Learning #1
+# In-browser Mockups
+with basic CSS, HTML, and a templating framework (Erb)
 
 !SLIDE
-#5. Internet Architecture: 
-
-What is it? The medium you're working in.
-Why does it help lean teams? Just as print designers have a good handle on the properties of papers and ink and the process of printing, web designers should understand the web.
-How do I learn it? Next slide!
-Difficulty: 3 of 5
+Learning #2
+# TDD and Story Writing
+using Cucumber. This helped my UX and UI practice **enormously**.
 
 !SLIDE
-# Pretty much all you need to know from @cdixon's list
-- DNS: the internet's Yellow Pages
-- http: HyperText Transfer Protocol
-- html: HyperText Markup Language
-- Web Servers: apache, nginx, 
-- Database: MySQL, PostgreSQL, {NoSql: MongoDB, Redis, etc}
-!["Internet architecture diagram"](images/internet-architecture.png)
+Learning #3
+# Basic Tools
+Setting up an environment, Bundler, Rake, etc., let me run locally. 
 
 !SLIDE
-#6. Database are full of nouns
-Persistent Storage is acted on by a small # of verbs:
-
-What is it? Persistent storage
-Why does it help lean teams? Understand how data is going to be stored
-How do I learn it? Next slide! Or learn SQL. Or better, an ORM.
-Difficulty: 3 of 5
+Learning #4
+# Git
+So I could contribute small fixes, mostly copy and CSS. 
 
 !SLIDE
-# Persistent Storage 
-databases consist of Tables (like excel) with columns (attributes?) and rows (records).
-
-- CREATE
-- READ
-- UPDATE
-- DESTROY
+# But
+I was breaking a lot of tests
 
 !SLIDE
-#7. HTTP Verbs: 
-
-What is it? How data is communicated across the internet
-Why does it help lean teams? Understand how data is going to be transferred
-How do I learn it? Next slide! Or learn curl. Or some other weird stuff.
-Difficulty: 3 of 5
+Learning #5
+# Rspec and Capybara
+So I run tests and make some fixes.
 
 !SLIDE
-Understanding the basic verbs of HTTP teaches which actions are affordances of the web.
-
-- POST
-- GET
-- PUT
-- DELETE
+Now I could commit code
+# **without** breaking the build
+:-)
 
 !SLIDE
-#8. REST: Using those verbs (check that this is a formal def'n of REST)
-
-What is it? How data is architected across modern web apps.
-Why does it help lean teams? Understand how domains will be represented in software.
-How do I learn it? Next slide! And the last two slides! Or read a thesis. Or learn Rails.
-Difficulty: 5 of 5
+Learning #6
+# JQuery and the DOM
+So I could make better in-browser mocks and make more changes
 
 !SLIDE
-#Representational State Transfer
-REST is an architectural style that makes building apps cleaner. Think of it as a design constraint. If you can look at any feature or mockup you create and answer "what verbs and nouns are involved?" you'll do most of the work of the developers. Its also important to separate *state* from *resources* when modeling your domain.
-
-| Database | HTTP Request |
-| CREATE   | POST         |
-| READ     | GET          |
-| UPDATE   | PUT          |
-| DESTROY  | DELETE       |
+Learning #7
+# more Ruby, which led to ORMs and REST and HTTP verbs.
+That's a mouthful.
 
 !SLIDE
-# Part 3: Recommended resources
+Learning #8
+# By now, I was doing development regularly
+and starting to bring my Design practice back to it. Personas in cuke!
+
+!SLIDE
+Learning #&infin;
+# Still learning every day
+
+!SLIDE
+This whole time, I'd been picking up
+# internet architecture.
+(see Chris Dixon's list)
+
+!SLIDE
+# Meta-learnings
+
+!SLIDE
+Absolutes I Learned
+## About Learning Technical Things
+- Learn what the web is built of
+- Immersion/osmosis is a powerful teaching tool
+- Its important to **do** things, not just read about them
+
+!SLIDE
+Smells I Learned
+## About Learning Technical Things
+- Tools are important (but don't obsess over them)
+- develop the sense of when to ask for help and when to tough it out
+- develop the sense of smell of knowing when you should go along with Magic, and when you have to learn how it works under the hood
 
 # What else?
 Learn Rails! Or Sinatra.
 
 ## Courses
+- <Railstutorial.org>
 - Code Year
 - Method.ac
 - lynda
-- railstutorial.org
 - getHopscotch.com
 - treehouse / carsonified
 - think vitamin?
@@ -271,18 +254,16 @@ Learn Rails! Or Sinatra.
 ## Regular Series
 - ruby rogues
 - ruby show
+- peepcodes
+- railscasts
 
 ## Resources
-- dribble, forrst, stackoverflow
-- SO should get its own mention: "this is the first google result you should hit"
-- do a little research; google, check my RSS
-
-!SLIDE
-# The Links slide
-
-Learn Rails: <http://railstutorial.org>
-<http://jonathanpberger.com/talks> for more
+- Docs for Rails, JQuery, etc
+- stackoverflow
+- forrst
 
 !SLIDE
 # Thanks!
 jonathanpberger.com, jonathanpberger@gmail.com, @jonathanpberger on twitter, github, forrst, flickr, etc etc etc
+
+<http://jonathanpberger.com/talks> for this deck in HTML (with links).
